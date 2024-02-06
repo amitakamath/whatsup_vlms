@@ -1,0 +1,5 @@
+open_clip_torch
+clip
+scipy
+fairscale
+gdown
