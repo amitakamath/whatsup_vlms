@@ -623,10 +623,10 @@ class VG_QA(Dataset):
     def __init__(self, image_preprocess, text_perturb_fn=None, image_perturb_fn=None, root_dir=ARO_ROOT, download=False, subset='one'):
         self.root_dir = root_dir
         if subset == 'one':
-            annotation_file = os.path.join(root_dir, "vg_qa_one_obj_v2.json")
+            annotation_file = os.path.join(root_dir, "vg_qa_one_obj.json")
             image_dir = os.path.join(root_dir, 'vg_images')
         else:
-            annotation_file = os.path.join(root_dir, "vg_qa_two_obj_v2.json")
+            annotation_file = os.path.join(root_dir, "vg_qa_two_obj.json")
             image_dir = os.path.join(root_dir, 'vg_images')
         if not os.path.exists(image_dir):
             print("Image directory for VG-QA could not be found!")
