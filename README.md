@@ -38,6 +38,8 @@ The data all lives in `whatsup_vlms/data`, which is also where your models will 
 
 For all the datasets, setting `--download=True` (while running `python main_aro.py` or while instantiating the dataset directly, as mentioned later in this README) will download the data JSONs and images if the files don't already exist.
 
+You can also download the data directly from [this Google Drive link](https://drive.google.com/drive/u/3/folders/164q6X9hrvP-QYpi3ioSnfMuyHpG5oRkZ).
+
 **Note:** As mentioned earlier, in all the datasets in our work (`Controlled_Images_A`, `Controlled_Images_B`, `COCO_QA_one_obj`, `COCO_QA_two_obj`, `VG_QA_one_obj`, `VG_QA_two_obj`), the first caption option is always the correct one. However, of the datasets that were already in the repository (`VG_Relation`, `VG_Attribution`, `COCO_Order`, `Flickr30k_Order`), in the first two of these, the second caption is correct, and in the next two of these, the first caption is correct. This is all handled by the evaluation code, so you don't have to worry about it; this is just for your reference, if you do choose to experiment with those datasets here (although I'd recommend switching back to the [original repository](https://github.com/mertyg/vision-language-models-are-bows)). 
 
 ## Running experiments with the models in the repo
